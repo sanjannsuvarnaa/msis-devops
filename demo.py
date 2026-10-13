@@ -1,3 +1,5 @@
+Replace demo.py with:
+
 cat > demo.py << 'EOF'
 def add(a, b):
     return a + b
@@ -5,7 +7,12 @@ def add(a, b):
 def sub(a, b):
     return a - b
 
+def divide(a, b):
+    if b == 0:
+        return "Cannot divide by zero"
+    return a / b
+
 print("Addition:", add(10, 5))
 print("Subtraction:", sub(10, 5))
+print("Division:", divide(10, 5))
 EOF
-
