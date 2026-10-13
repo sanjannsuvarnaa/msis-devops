@@ -1,1 +1,11 @@
-print("MSIS DevOps Lab")
+cat > demo.py << 'EOF'
+def add(a, b):
+    return a + b
+
+def sub(a, b):
+    return a - b
+
+print("Addition:", add(10, 5))
+print("Subtraction:", sub(10, 5))
+EOF
+
